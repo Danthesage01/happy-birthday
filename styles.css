@@ -40,10 +40,74 @@ h1, h2, h3, h4, p {
     align-items: center;
 }
 
+@media (min-width: 250px) {
+.gifts{
+    display: flex;
+    flex-direction: column;
+}
 
 .gift-section {
-    margin-top: 50px; 
+    margin-top: 50px;
+
+  }
+
+.gift-title {
+    margin-bottom: 10px;
 }
+
+.gift-hint {
+    font-style: italic;
+    text-shadow: 0 0 5px black;
+    margin: 30px
+}
+
+.gift-img{
+    border: 6px solid white;
+    border-radius: 10px;
+    /* background-image: url("images/gift-cover.jpg"); */
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin:  0 auto;
+}
+.gift-img-happy {
+    background-image: url("images/guy.gif")
+}
+.gift-img-hot{
+    background-image: url("images/hot.gif")
+}
+.gift-img-best{
+    background-image: url("images/beautiful.gif")
+}
+.gift-img-love{
+    background-image: url("images/love.gif")
+}
+.footer {
+    font-style: italic;
+    width: 400px;
+    margin: 20px auto 20px;
+}
+
+h3 {
+    color: white;
+    font-style: bold;
+    text-shadow: 0 0 5px black;
+}
+}
+
+@media (min-width: 650px) {
+    .gifts{
+        border: 2px solid #EFB0C9;;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+ }
+ .gift-section {
+    margin-top: 50px; 
+  }
 
 .gift-title {
     margin-bottom: 10px;
@@ -88,13 +152,4 @@ h3 {
     text-shadow: 0 0 5px black;
 }
 
-@media (min-width: 650px) {
-    .gifts{
-        border: 2px solid #EFB0C9;;
-        margin-top: 20px;
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 50px;
- }
 }
